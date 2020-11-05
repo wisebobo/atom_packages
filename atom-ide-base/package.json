@@ -1,0 +1,130 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+  "_id": "atom-ide-base@2.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-NqwFeH9mX/PfDHmz341My96wQ9cyHh5UEEi3uptoc9YD7DxAeL+7S0Bduhs4dR2c9rIWIeKcJxCkRtqAfac9nw==",
+  "_location": "/atom-ide-base",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+  "_shasum": "3770977a671da5cc9ff9f07531d970a0d2423770",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-base/versions/2.1.1/tarball",
+  "_where": "C:\\Users\\Admin\\AppData\\Local\\Temp\\apm-install-dir-2020105-6136-1vgs2ne.6qzi",
+  "activationHooks": [
+    "core:loaded-shell-environment"
+  ],
+  "atomTestRunner": "./spec/runner",
+  "author": {
+    "name": "atom-ide-community"
+  },
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-base/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {},
+  "dependencies": {
+    "atom-ide-markdown-service": "^1.6.0",
+    "atom-package-deps": "^6.0.0",
+    "classnames": "^2.2.6",
+    "dompurify": "^2.1.1",
+    "etch": "^0.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "rxjs": "^6.6.3"
+  },
+  "deprecated": false,
+  "description": "Atom IDE packages for Atom",
+  "devDependencies": {
+    "@types/atom": "1.40.4",
+    "@types/classnames": "^2.2.10",
+    "@types/dompurify": "^2.0.4",
+    "@types/jasmine": "^3.5.14",
+    "@types/node": "^14.11.7",
+    "@types/react": "^16.9.51",
+    "@types/react-dom": "^16.9.8",
+    "atom-jasmine3-test-runner": "^5.1.2",
+    "build-commit": "0.1.1",
+    "coffeescript": "^1.12.7",
+    "cross-env": "7.0.2",
+    "csstype": "^3.0.3",
+    "eslint": "7.10.0",
+    "eslint-config-atomic": "^1.5.0",
+    "jasmine": "^3.6.1",
+    "npm-check-updates": "9.0.4",
+    "prettier": "^2.1.2",
+    "rollup": "2.29.0",
+    "rollup-plugin-atomic": "^1.2.0",
+    "shx": "0.3.2",
+    "tslib": "^2.0.2",
+    "typescript": "^4.0.3"
+  },
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "files": [
+    "commons-atom",
+    "commons",
+    "commons-ui",
+    "src-commons-atom",
+    "src-commons",
+    "src-commons-ui",
+    "src-package",
+    "types-packages",
+    "tsconfig.json"
+  ],
+  "homepage": "https://github.com/atom-ide-community/atom-ide-base#readme",
+  "keywords": [
+    "atom",
+    "ide",
+    "atom-ide-community"
+  ],
+  "license": "MIT",
+  "main": "package/main.js",
+  "name": "atom-ide-base",
+  "package-deps": [
+    "atom-ide-markdown-service",
+    "atom-ide-datatip",
+    "atom-ide-signature-help",
+    "atom-ide-hyperclick",
+    "atom-ide-definitions",
+    "atom-ide-outline",
+    "linter",
+    "linter-ui-default"
+  ],
+  "providedServices": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-base.git"
+  },
+  "scripts": {
+    "build": "npm run build.package && npm run build.commons-atom && npm run build.commons-ui",
+    "build-commit": "build-commit -o dist",
+    "build.commons-atom": "npm run tsc.commons-atom",
+    "build.commons-ui": "npm run tsc.commons-ui",
+    "build.package": "npm run clean && cross-env NODE_ENV=production cross-env BABEL_KEEP_MODULES=true rollup -c",
+    "bump": "ncu -u -x coffeescript",
+    "clean": "shx rm -rf package commons-atom commons-ui commons",
+    "dev.commons-atom": "tsc -w -p src-commons-atom/tsconfig.json",
+    "dev.commons-ui": "tsc -w -p src-commons-ui/tsconfig.json",
+    "dev.package": "npm run clean && cross-env NODE_ENV=development cross-env BABEL_KEEP_MODULES=true rollup -c -w",
+    "format": "prettier --write .",
+    "lint": "eslint . --fix",
+    "prepare": "npm run build && shx rm -r **/tsconfig.tsbuildinfo",
+    "test": "atom --test spec",
+    "tsc.commons-atom": "tsc -p src-commons-atom/tsconfig.json || echo done",
+    "tsc.commons-ui": "tsc -p src-commons-ui/tsconfig.json || echo done",
+    "tsc.package": "tsc -p src-package/tsconfig.json || echo done"
+  },
+  "types": "./types-packages/main.d.ts",
+  "version": "2.1.1"
+}

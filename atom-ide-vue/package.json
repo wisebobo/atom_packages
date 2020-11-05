@@ -1,0 +1,150 @@
+{
+  "_from": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+  "_id": "atom-ide-vue@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-XPIfNjHaNID0w05MdWnnaKC+xrfkzyzfBRpZseTz0IlZL4vSbBBMNMmp0ZUtHHsPjaDWVyp01uhyogn3wEYJpA==",
+  "_location": "/atom-ide-vue",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+  "_shasum": "68a9fd7f90706116456739f85c6c72504b376e94",
+  "_spec": "https://www.atom.io/api/packages/atom-ide-vue/versions/1.4.0/tarball",
+  "_where": "C:\\Users\\Admin\\AppData\\Local\\Temp\\apm-install-dir-2020105-10688-yl9zvo.n4dpj",
+  "activationHooks": [
+    "text.html.vue:root-scope-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/atom-ide-community/atom-ide-vue/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "validation": {
+      "title": "Validation",
+      "description": "Linting and error checking. *Requires reload to take effect.*",
+      "type": "object",
+      "order": 1,
+      "properties": {
+        "script": {
+          "title": "Script",
+          "description": "Validate script tag's content (JS, TS)",
+          "type": "boolean",
+          "default": true,
+          "order": 1
+        },
+        "template": {
+          "title": "Template",
+          "description": "Validate template tag's content (HTML)",
+          "type": "boolean",
+          "default": true,
+          "order": 2
+        },
+        "style": {
+          "title": "Style",
+          "description": "Validate style tag's content (CSS, SCSS, Less)",
+          "type": "boolean",
+          "default": true,
+          "order": 3
+        }
+      }
+    },
+    "experimental": {
+      "title": "Experimental",
+      "description": "*Disabled by default. Requires reload to take effect.*",
+      "type": "object",
+      "properties": {
+        "templateInterpolationService": {
+          "title": "Template interpolation service",
+          "description": "Support for diagnostics, references, jump to definition etc. in template",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    },
+    "signature-help": {
+      "versions": {
+        "0.1.0": "consumeSignatureHelp"
+      }
+    },
+    "console": {
+      "versions": {
+        "0.1.0": "consumeConsole"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-languageclient": "^1.0.0",
+    "vls": "^0.5.4"
+  },
+  "deprecated": false,
+  "description": "Vue language support for Atom IDE",
+  "devDependencies": {
+    "prettier": "^2.1.2"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "enhancedScopes": [
+    "text.html.vue"
+  ],
+  "homepage": "https://github.com/atom-ide-community/atom-ide-vue#readme",
+  "keywords": [
+    "atom-package",
+    "atom-ide",
+    "ide-vue"
+  ],
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "atom-ide-vue",
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    },
+    "outline-view": {
+      "versions": {
+        "0.1.0": "provideOutlines"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atom-ide-community/atom-ide-vue.git"
+  },
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "version": "1.4.0"
+}
