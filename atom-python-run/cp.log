@@ -1,10 +1,8 @@
 INFO: Platform: win32
 INFO: Version Info: v0.3.0
 DEBUG: Log Path: C:\Users\Admin\.atom\packages\atom-python-run\cp.log
-DEBUG: command: ['python', 'E:\\Python\\MyProgram\\temp\\m38u_download\\m3u8_multi_dl.py']
+DEBUG: command: ['python', 'E:\\Python\\douyin\\Ó£»¨.py']
 DEBUG: file: None
 DEBUG: pause: True
 DEBUG: repl: python
-DEBUG: args: ['E:\\Python\\MyProgram\\temp\\m38u_download\\m3u8_multi_dl.py']
-INFO: return code: 0 (0x0)
-INFO: elapsed time: 497.551841
+DEBUG: args: ['E:\\Python\\douyin\\Ó£»¨.py']

@@ -1,0 +1,48 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+  "_id": "language-terraform@0.9.6",
+  "_inBundle": false,
+  "_integrity": "sha512-RVdEUf95zNjdERDnCxBlvw+aB3YF+M2woXPv/i5glFYQDOOPUhNQ0Z9OWVuPJjYzmnr1BFu/LB88l6g/Me/hww==",
+  "_location": "/language-terraform",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+  "_shasum": "058b3bf0d20d27bf181d394e42a3c44e333acf41",
+  "_spec": "https://www.atom.io/api/packages/language-terraform/versions/0.9.6/tarball",
+  "_where": "C:\\Users\\Admin\\AppData\\Local\\Temp\\apm-install-dir-2021710-2792-2hicht.c674j",
+  "bugs": {
+    "url": "https://github.com/cmur2/language-terraform/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Terraform.io support for Atom",
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/cmur2/language-terraform",
+  "keywords": [
+    "language",
+    "grammar",
+    "terraform",
+    "terraform-0-12",
+    "configuration"
+  ],
+  "license": "MIT",
+  "name": "language-terraform",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmur2/language-terraform.git"
+  },
+  "version": "0.9.6"
+}
